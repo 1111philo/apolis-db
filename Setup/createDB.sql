@@ -55,6 +55,7 @@ CREATE TABLE GuestServices (
     guest_service_id INT AUTO_INCREMENT PRIMARY KEY,
     guest_id INT NOT NULL,
     service_id INT NOT NULL,
+    slot_id INT,
     status VARCHAR(50) NOT NULL CHECK (status IN ('Queued', 'Slotted', 'Completed')),
     queued_at TIMESTAMP,
     slotted_at TIMESTAMP,
