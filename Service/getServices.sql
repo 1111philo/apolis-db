@@ -1,6 +1,6 @@
 SELECT 
     service_id,
-    name AS service_name,
+    name,
     quota,
     created_at,
     updated_at
