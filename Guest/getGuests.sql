@@ -12,7 +12,7 @@ SELECT
             'status', GuestNotifications.status,
             'created_at', GuestNotifications.created_at
         )
-    ) AS notifications,
+    ) AS guest_notifications,
     JSON_ARRAYAGG(
         JSON_OBJECT(
             'guest_service_id', GuestServices.guest_service_id,
@@ -22,7 +22,7 @@ SELECT
             'slotted_at', GuestServices.slotted_at,
             'completed_at', GuestServices.completed_at
         )
-    ) AS services
+    ) AS guest_services
 FROM 
     Guests
 LEFT JOIN 
