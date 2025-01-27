@@ -35,7 +35,7 @@ LEFT JOIN
 -- WHERE 
 --     (@first_name IS NULL OR Guests.first_name = @first_name)
 --     AND (@last_name IS NULL OR Guests.last_name = @last_name)
---     AND (@guest_uid IS NULL OR Guests.guest_id = @guest_uid)
+--     AND (@guest_id IS NULL OR Guests.guest_id = @guest_id)
 --     AND (@guest_dob IS NULL OR Guests.dob = @guest_dob)
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
 -- conditions to limit with search
